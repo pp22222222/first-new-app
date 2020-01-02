@@ -13,16 +13,30 @@ export class AppComponent  {
   isactive:boolean= false;
 message:string 
 // myInputText:string="Tej Patel"
+  cart_message:string  = " ";
+  info:string = " ";
+  // uname:string="";
 
 
-  onAddCart()
+  onAddCart(event)
   {
-   this.message = "Item Addded in Cart";
+    this.cart_message = event.target.value + " Added to cart";
   }
 
-  onInputClick(event)
+
+  // onAddCart()
+  // {
+  //  this.message = "Item Addded in Cart";
+  // }
+
+  onGetInfo(input_info)
   {
-    alert(event.target.value);
+    this.info = "description "+ input_info.value ;
+
   }
+  // onInputClick(event)
+  // {
+  //   alert(event.target.value);
+  // }
 
 }

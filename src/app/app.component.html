@@ -19,10 +19,23 @@
 <br><br>
 <div class="box2">
 
-<button (click)="onAddCart()">  Add to Cart</button>
-<p>{{message}}</p>
-<input type="text" value="myInputText" (click)="onInputClick($event)"
->
+<!-- <button (click)="onAddCart()">  Add to Cart</button> -->
+<!-- <p>{{message}}</p> -->
+<input type="text" name="none" #input_info >
+<Button (click)="onGetInfo(input_info)" >Get Info</Button>
+<p>{{info}}</p>
 
-<img src="">
+
+<br><br>
+
+<button value="TV" (click)=onAddCart($event)>TV</button> 
+<button value="AC" (click)=onAddCart($event)>AC</button>
+<button value="RADIO" (click)=onAddCart($event)>Radio</button> 
+<p>{{cart_message}}</p>
+
+</div>
+
+<div>
+  <input type="text" value="anup" [(ngModel)] = "uname">
+  <h2>{{uname}}</h2>
 </div>
