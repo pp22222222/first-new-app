@@ -1,0 +1,28 @@
+<app-mycontainer>
+
+</app-mycontainer>
+
+<app-practice>
+
+
+
+</app-practice>
+
+<!-- <div class="box" [style.margin]="isActive?mystyle1:mystyle2">
+  Classs Bind
+</div> -->
+<br><br>
+<div class="box" [ngClass]="'class1 class2 class3'" [ngStyle]=" { 'background-color':'red',
+'border':'5px solid green'} ">
+  Classs Bind
+</div>
+<br><br>
+<div class="box2">
+
+<button (click)="onAddCart()">  Add to Cart</button>
+<p>{{message}}</p>
+<input type="text" value="myInputText" (click)="onInputClick($event)"
+>
+
+<img src="">
+</div>

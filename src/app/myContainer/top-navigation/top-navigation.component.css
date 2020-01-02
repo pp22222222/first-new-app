@@ -1,0 +1,39 @@
+div
+{
+ background-color:skyblue;
+ font-size: 20px;
+}
+
+.nav-name
+{
+  width: 30%;
+  color:white;
+  font-weight: bold;
+  float: left;
+  color:black
+  
+}
+
+.nav-list
+{  
+  float:right;
+
+}
+
+
+
+.clear
+{
+clear:both;
+}
+
+a{
+  color:white;
+  text-decoration: none;
+  padding: 10px;
+}
+
+a:hover
+{
+  color:black;
+}
